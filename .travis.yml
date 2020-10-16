@@ -8,7 +8,7 @@ jobs:
     - stage: test
       name: "test script" 
       script:
-        - ./oc-cluster.sh
+        - ./scripts/oc-cluster.sh
         - wget https://mirror.openshift.com/pub/openshift-v4/clients/odo/latest/odo-linux-amd64
         - chmod +x odo-linux-amd64
         - sudo mv odo-linux-amd64 /usr/local/bin/odo
